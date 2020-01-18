@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Record_Store.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>About Admins</h2>
+
+<table class="table">
+    <tr>
+        <th>Options: </th>
+    </tr>
+    <tr>
+        <th>@Html.ActionLink("Edit Tracks List", "TracksPage")</th>
+    </tr>
+    <tr>
+        <th>@Html.ActionLink("Edit Employees List", "EmployeesPage")</th>
+    </tr>
+
+</table>

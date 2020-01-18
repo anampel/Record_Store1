@@ -1,0 +1,63 @@
+﻿@model Record_Store.Models.Album
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Album</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Artist.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Artist.Name)
+        </dd>
+
+    </dl>
+    @*<table class="table">     //create display for every line of albums
+        <tr>
+            <th>
+                Album Name
+            </th>
+            <th>
+                Media Type
+            </th>
+            <th>
+                Genre
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Track)      // to table Album exei sxesh me ton Track, 
+                                                //mporw na parw stoixeia apo pinakes pou exoyn sxesh *-->1 me ton Track, px Album, MediaType, Genre
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Album.Title)    
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MediaType.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Genre.Name)
+                </td>
+            </tr>
+        }
+    </table>*@
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AlbumId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
