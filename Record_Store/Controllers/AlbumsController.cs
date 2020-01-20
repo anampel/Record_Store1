@@ -14,7 +14,7 @@ namespace Record_Store.Controllers
     {
         private ChinookEntities db = new ChinookEntities();
 
-        // GET: Albums
+        //  GET: Albums
         public ActionResult Index()
         {
             var album = db.Album.Include(a => a.Artist);
