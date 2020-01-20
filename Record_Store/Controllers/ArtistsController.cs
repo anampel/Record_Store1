@@ -15,6 +15,7 @@ namespace Record_Store.Controllers
         private ChinookEntities db = new ChinookEntities();
 
         // GET: Artists
+        // SOME CHANGE
         public ActionResult Index()
         {
             return View(db.Artist.ToList());
