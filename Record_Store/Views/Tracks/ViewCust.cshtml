@@ -1,15 +1,13 @@
 ﻿@model IEnumerable<Record_Store.Models.Track>
+
 @{
-    ViewBag.Title = "TracksPage";
+    ViewBag.Title = "ViewCust";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>TracksPage</h2>
+<h2>Tracks</h2>
 
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -66,11 +64,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.MediaType.Name)
             </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.TrackId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.TrackId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.TrackId })
-            </td>
+            
         </tr>
     }
 

@@ -1,0 +1,36 @@
+﻿
+@model IEnumerable<Record_Store.Models.Album>
+
+@{
+    ViewBag.Title = "ViewCust";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>Albums</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Artist.Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Artist.Name)
+            </td>
+           
+        </tr>
+    }
+
+</table>

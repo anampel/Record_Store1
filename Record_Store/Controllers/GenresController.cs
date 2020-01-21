@@ -19,6 +19,10 @@ namespace Record_Store.Controllers
         {
             return View(db.Genre.ToList());
         }
+        public ActionResult ViewCust()
+        {
+            return View(db.Genre.ToList());
+        }
 
         // GET: Genres/Details/5
         public ActionResult Details(int? id)

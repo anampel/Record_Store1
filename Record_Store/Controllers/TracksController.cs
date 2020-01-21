@@ -20,6 +20,11 @@ namespace Record_Store.Controllers
             var track = db.Track.Include(t => t.Album).Include(t => t.Genre).Include(t => t.MediaType);
             return View(track.ToList());
         }
+        public ActionResult ViewCust()
+        {
+            var track = db.Track.Include(t => t.Album).Include(t => t.Genre).Include(t => t.MediaType);
+            return View(track.ToList());
+        }
 
         // GET: Tracks/Details/5
         public ActionResult Details(int? id)

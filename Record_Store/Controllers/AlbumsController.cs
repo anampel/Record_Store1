@@ -21,6 +21,12 @@ namespace Record_Store.Controllers
             return View(album.ToList());
         }
 
+
+        public ActionResult ViewCust()
+        {
+            var album = db.Album.Include(a => a.Artist);
+            return View(album.ToList());
+        }
         // GET: Albums/Details/5
         public ActionResult Details(int? id)
         {

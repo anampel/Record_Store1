@@ -292,9 +292,11 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Edit.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
-    <Content Include="Views\Employees\EmployeesPage.cshtml" />
-    <Content Include="Views\Employees\TracksPage.cshtml" />
-    <Content Include="Views\Customers\Store.cshtml" />
+    <Content Include="Views\Albums\ViewCust.cshtml" />
+    <Content Include="Views\Artists\ViewCust.cshtml" />
+    <Content Include="Views\Genres\ViewCust.cshtml" />
+    <Content Include="Views\Playlists\ViewCust.cshtml" />
+    <Content Include="Views\Tracks\ViewCust.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
